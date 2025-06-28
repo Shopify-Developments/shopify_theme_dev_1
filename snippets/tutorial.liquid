@@ -1,0 +1,42 @@
+<p>{{ desc }}</p>
+
+
+{% comment %} {{ "tutorial.css" | asset_url | stylesheet_tag }}
+    
+    {% assign products = collection.products %}
+    {% for product in products %}
+      {{ product.featured_image | image_url: width: 400, height: 400 | image_tag }}
+    
+      <p class="highlight">{{ product.featured_image.alt }}</p>
+    {% endfor %}
+<script src="{{"tutorial.js"| asset_url}}" defer></script> {% endcomment %}
+{% comment %} {% assign products = collection.products %}
+                                                            {% assign product_titles = products | map: "title" %}
+                                                            {% for title in product_titles %}
+                                                              <p>{{ title }}</p>
+                                                            {% endfor %}
+ {% endcomment %}
+{% comment %} {% assign my_string = "This is a long and very long text" %}
+<p>{{ my_string | truncatewords: 5, "...." }}</p> {% endcomment %}
+
+{% comment %} {% assign my_num = -34.4 | abs | modulo: 3 | at_least: 4 %}
+<p>{{ my_num }}</p> {% endcomment %}
+
+
+{% comment %} {% paginate collection.products by 5 %}
+                                                                                                            {% for product in collection.products %}
+                                                                                                              <p>{{ forloop.index }} - {{ product.title }}</p>
+                                                                                                              {% if product.tags != blank %}
+                                                                                                                <h3>Tags</h3>
+                                                                                                                <ul>
+                                                                                                                  {% for tag in product.tags %}
+                                                                                                                    <li>
+                                                                                                                      <p>{{ tag }}</p>
+                                                                                                                    </li>
+                                                                                                                  {% endfor %}
+                                                                                                                </ul>
+                                                                                                              {% endif %}
+                                                                                                            {% endfor %}
+                                                                                                            <p>
+                                                                                                              {{ paginate | default_pagination }}</p>
+{% endpaginate %} {% endcomment %}
