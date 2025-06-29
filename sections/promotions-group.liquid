@@ -1,22 +1,28 @@
 <p>{{ section.settings.title }}</p>
 
 {% schema %}
-  {
-    "name": "promotions-group",
-    "tag": "section",
-    "class": "my-wrapper",
-    "settings": [
-      {
-        "type": "text",
-        "label": "title",
-        "id": "title",
-        "default": "default title"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Promotions Group"
-      }
-    ]
-  }
+{
+"name": "promotions-group",
+"tag": "section",
+"class": "my-wrapper",
+"settings": [
+{
+"type": "text",
+"label": "title",
+"id": "title",
+"default": "default title"
+},
+{
+"type": "text_alignment",
+"id": "alignment",
+"label": "Text alignment",
+"default": "center"
+}
+],
+"presets": [
+{
+"name": "Promotions Group"
+}
+]
+}
 {% endschema %}
