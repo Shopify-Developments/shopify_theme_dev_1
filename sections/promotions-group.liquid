@@ -1,7 +1,7 @@
 <p style="text-align: {{section.settings.alignment}};">{{ section.settings.title }}</p>
 {% for block in section.blocks %}
 {% if block.settings.type == "promotion" %}
-    <p>{{block.settings.label}}</p>
+    <p>{{block.settings.title}}</p>
     {{block.settings.image |  image_url: width: 400| image_tag}}
     
 {% endif %}
