@@ -1,0 +1,35 @@
+<h2>{{section.settings.header_text}}</h2>
+<p>{{section.settings.content_text}}</p>
+<button>{{section.settings.button_text}}</button>
+
+
+{% schema %}
+  {
+    "name": "my-rich-text",
+    "tag": "section",
+    "class": "my-rich-text",
+    "settings": [
+      {
+        "type": "text",
+        "id": "header_text",
+        "label": "Header",
+        "default": "This is default header",
+      }, {
+        "type": "textarea",
+        "id": "content_text",
+        "label": "Content",
+        "default": "This is defualt context of the rich text"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Button Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "My Rich Text"
+      }
+    ]
+  }
+{% endschema %}
