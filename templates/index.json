@@ -121,6 +121,26 @@
     },
     "promotions_group_brxdiH": {
       "type": "promotions-group",
+      "blocks": {
+        "promotion_4fETmb": {
+          "type": "promotion",
+          "settings": {
+            "title": "promo 1",
+            "image": "shopify://shop_images/womens-red-t-shirt_925x_407e21d4-7797-451e-aea8-97eaee4e0613.jpg"
+          }
+        },
+        "promotion_WaBBwm": {
+          "type": "promotion",
+          "settings": {
+            "title": "promo 2",
+            "image": "shopify://shop_images/woman-in-the-city_925x_7ba6811b-3998-4d54-bfcd-e14cad1fa7b4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_4fETmb",
+        "promotion_WaBBwm"
+      ],
       "name": "Promotions Group",
       "settings": {
         "title": "default title",
