@@ -81,10 +81,10 @@
     "blocks": [
       {
         "type": "heading",
-        "name": "Promotion",
+        "name": "Heading",
         "settings": [
           {
-            "type": "textarea",
+            "type": "richtext",
             "id": "heading",
             "label": "Heading"
           }, {
@@ -115,7 +115,59 @@
             "default": "3rem"
           }
         ]
+      }, {
+        "type": "textarea",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "desc",
+            "label": "Description"
+          }
+        ]
+      }, {
+        "type": "button",
+        "name": "Buttons",
+        "settings": [
+          {
+            "type": "text",
+            "id": "first_btn_text",
+            "label": "First button label",
+            "info": "Leave the label blank to hide the button.",
+            "default": "Learn More"
+          },
+          {
+            "type": "page",
+            "id": "first_btn_link",
+            "label": "First button link",
+            "info": "Paste a link or search"
+          },
+          {
+            "type": "checkbox",
+            "id": "first_btn_style",
+            "label": "Use outline button style",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "second_btn_text",
+            "label": "Second button label",
+            "info": "Leave the label blank to hide the button.",
+            "default": "Learn More"
+          }, {
+            "type": "page",
+            "id": "second_btn_link",
+            "label": "Second button link",
+            "info": "Paste a link or search"
+          }, {
+            "type": "checkbox",
+            "id": "second_btn_style",
+            "label": "Use outline button style",
+            "default": false
+          }
+        ]
       }
+
     ],
     "presets": [
       {
