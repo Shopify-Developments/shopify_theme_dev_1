@@ -123,7 +123,8 @@
       "type": "promotions-group",
       "name": "Promotions Group",
       "settings": {
-        "title": "default title"
+        "title": "default title",
+        "alignment": "center"
       }
     }
   },
