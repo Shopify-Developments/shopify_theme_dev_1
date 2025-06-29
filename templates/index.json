@@ -121,9 +121,22 @@
     },
     "promotions_group_brxdiH": {
       "type": "promotions-group",
+      "blocks": {
+        "promotion_eV4XkQ": {
+          "type": "promotion",
+          "settings": {
+            "title": "First Image",
+            "image": "shopify://shop_images/womens-red-t-shirt_925x_407e21d4-7797-451e-aea8-97eaee4e0613.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_eV4XkQ"
+      ],
       "name": "Promotions Group",
       "settings": {
-        "title": "default title"
+        "title": "default title",
+        "alignment": "center"
       }
     }
   },
